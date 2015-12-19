@@ -10,9 +10,14 @@ import Foundation
 
 @objc class GiftManager: NSObject {
     static let imageNames = [
-        "IDEAlertBezel_Generic_Rayrolling.pdf",
-        "Christmas-Gifts-icon.png",
-        "christmas_stocking.png",
+        "image1.png",
+        "image2.png",
+        "image3.png",
+        "image4.png",
+        "image5.png",
+        "image6.png",
+        "image7.png",
+        "image8.png", 
     ]
 
     static let messages = [
@@ -27,6 +32,8 @@ import Foundation
         "🎉🎉🎉",
         "Santa is coming",
         "A Christmas wish",
+        "Have a nice day",
+        "Smile 😄"
     ]
 
     class func makeGift() -> Gift {
