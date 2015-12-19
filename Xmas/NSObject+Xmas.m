@@ -13,10 +13,10 @@
 @implementation NSObject (Xmas)
 
 - (id)xmas_initWithIcon:(id)icon
-                message:(id)message
+                message:(NSString *)message
            parentWindow:(id)parentWindow
                duration:(double)duration {
-    if (icon && [ToggleManager isEnabled]) {
+    if (icon && [ToggleManager isEnabled] && [message containsString:@"Succeeded"]) {
         NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.fantageek.Xmas"];
 
         Gift *gift = [GiftManager makeGift];
